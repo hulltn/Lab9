@@ -1,4 +1,4 @@
-Class Person{
+class Person{
   String name;
   int age;
   String color;

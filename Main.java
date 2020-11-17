@@ -22,7 +22,7 @@ class Main {
       BufferedWriter output = new BufferedWriter(toWriteFile);
 
       for(int i=0; i<people.size(); i++){
-        output.write(people.get(i).getname());
+        output.write(people.get(i).getName());
         output.newLine();
         output.write(Integer.toString(people.get(i).getAge()));
         output.newLine();
