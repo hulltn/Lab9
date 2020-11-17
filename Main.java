@@ -35,5 +35,21 @@ class Main {
     catch (IOException exception){
       System.out.println("An error occurred: " + exception);
     }
+    try {
+      FileReader myFile;
+      myFile = new FileReader("data.txt");
+      BufferedReader reader = new BufferedReader(myFile);
+
+      while(reader.ready()){
+        name = reader.readLine();
+        age = reader.readLine();
+        color = reader.readLine();
+      }
+      reader.close();
+    }
+    catch (IOException exception){
+    System.out.println("An error occurred: " + exception);  
+    }
+    
   }
 }
