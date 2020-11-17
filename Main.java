@@ -50,6 +50,8 @@ class Main {
     catch (IOException exception){
     System.out.println("An error occurred: " + exception);  
     }
-    
+    for(int i=0; i<people.size(); i++){
+      System.out.printf("%-10s %-10s %-10s %n", people.get(i).getName(), people.get(i).getAge(), people.get(i).getColor());
+    }
   }
 }
